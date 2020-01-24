@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="shortcut icon" href="assets/img/loader.gif">
 
     <title><?= PROJECT_NAME ?></title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/components/bootstrap/css/bootstrap.min.css?<?=COMMIT_HASH?>" rel="stylesheet">
+    <link href="vendor/components/bootstrap/css/bootstrap.css?<?=COMMIT_HASH?>" rel="stylesheet">
 
     <!-- jQuery UI core CSS -->
-    <link href="vendor/components/jqueryui/themes/base/jquery-ui.min.css?<?=COMMIT_HASH?>" rel="stylesheet">
+    <link href="vendor/components/jqueryui/themes/base/jquery-ui.css?<?=COMMIT_HASH?>" rel="stylesheet">
 
     <!-- Site core CSS -->
     <link href="assets/css/main.css?<?=COMMIT_HASH?>" rel="stylesheet">
@@ -27,7 +27,7 @@
 
 
     <!-- jQuery -->
-    <script src="vendor/components/jquery/jquery.min.js?<?=COMMIT_HASH?>"></script>
+    <script src="vendor/components/jquery/jquery.js?<?=COMMIT_HASH?>"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -102,8 +102,8 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="vendor/components/bootstrap/js/bootstrap.min.js?<?=COMMIT_HASH?>"></script>
-<script src="vendor/components/jqueryui/jquery-ui.min.js?<?=COMMIT_HASH?>"></script>
+<script src="vendor/components/bootstrap/js/bootstrap.js?<?=COMMIT_HASH?>"></script>
+<script src="vendor/components/jqueryui/jquery-ui.js?<?=COMMIT_HASH?>"></script>
 <script src="assets/js/main.js?<?=COMMIT_HASH?>"></script>
 </body>
 </html>
