@@ -55,7 +55,7 @@
 
 <h3>Sending data to server</h3>
 <h4>jQuery $.post (Ajax) submit example</h4>
-Fill the name field below and click <i>submit form using ajax</i>.
+Fill the name field below and  click <i>submit form using ajax</i>.
 <form id="ajax-form">
     Your name: <input type="text" placeholder="Write something here" name="name"/><br/>
 </form>
