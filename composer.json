@@ -1,0 +1,15 @@
+{
+  "require": {
+    "components/bootstrap": "^4.0",
+    "phpmailer/phpmailer": "^6.0",
+    "components/jqueryui": "^1.12"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": [
+        "system/classes/",
+        "classes/App"
+      ]
+    }
+  }
+}
