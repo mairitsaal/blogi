@@ -36,7 +36,7 @@
     <li>In that file create <code>class posts</code> (lower case letters) which <code>extends Controller</code>
         (capitalized)
     </li>
-    <li>Create <code>function index() </code>  within that class. This is the default action which will be called when no
+    <li>Create <code>function index() </code> within that class. This is the default action which will be called when no
         action is specified (e.g. just /posts). There you can set all the variables your view will need.
     </li>
     <li>Create <code>function view()</code> within that class.
