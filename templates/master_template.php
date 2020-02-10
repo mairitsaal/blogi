@@ -42,35 +42,33 @@
 
 <!-- Fixed navbar -->
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <ul class="container">
+    <div class="container">
 
             <a class="navbar-brand" href="#"><?= PROJECT_NAME ?></a>
 
 
             <ul class="navbar-nav">
-                <li class="nav-item <?= $controller == 'posts' ? 'active' : '' ?>"><a class="nav-link" href="#">Home</a></li>
-
-                <li class="nav-item <?= $controller == 'posts' ? 'active' : '' ?>"><a class="nav-link" href="#">Halo admin</a></li>
+                <li class="nav-item <?= $controller == 'posts' ? 'active' : '' ?>"><a class="nav-link" href="<?php echo BASE_URL;?>">Posts</a></li>
+                <li class="nav-item <?= $controller == 'tags' ? 'active' : '' ?>"><a class="nav-link" href="<?php echo BASE_URL;?>">Tags</a></li>
+                <li class="nav-item <?= $controller == 'users' ? 'active' : '' ?>"><a class="nav-link" href="<?php echo BASE_URL;?>>">Users</a></li>
+                <li class="nav-item <?= $controller == 'halo' ? 'active' : '' ?>"><a class="nav-link" href="#">Halo admin</a></li>
 
                 <!--Dropdown list item start-->
 
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><?= $_SESSION['language'] ?></a>
                     <div class="dropdown-menu">
-                        <?php foreach ($supported_languages as $language): ?>
-                            <a href="<?= $controller ?>?language=<?= $language ?>"
-                                   class="<?= $language == $_SESSION['language'] ? 'active' : '' ?>"><?= $language ?></a>
 
-                        <?php endforeach ?>
                     </div>
                 </li>
                 <!-- dropdown list item end -->
 
-                <li title="<?=__('Log out')?> <?= $auth->name ?>" class="nav-item"><a class="nav-link"
+               <li title="<?=__('Log out')?> <?= $auth->name ?>" class="nav-item">
+                   <a class="nav-link"
                     href="logout"><span class="glyphicon glyphicon-log-out" aria-hidden="true">Log Out</a></li>
         </ul>
-        <!--/.nav-collapse -->
-    </div>
+
+ </div>
 </nav>
 
 <div class="container">
@@ -78,7 +76,7 @@
     <!-- Main component for a primary marketing message or call to action -->
     <?php if (!file_exists("views/$controller/{$controller}_$action.php")) error_out('The view <i>views/' . $controller . '/' . $controller . '_' . $action . '.php</i> does not exist. Create that file.'); ?>
     <?php @require "views/$controller/{$controller}_$action.php"; ?>
-    
+
 </div>
 <!-- /container -->
 
